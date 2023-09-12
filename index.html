@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normilize.css">
-    <link rel="preload" href="css/normilize.css">
+    <link rel="preload" href="css/normilize.css" as="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Calculator</title>
 </head>
@@ -13,9 +13,10 @@
 <body>
 
     <main class="calculator-frame">
-        <label for="" class="result">0</label>
+         <input class="result" type="text" inputmode="numeric"  id="Result" >
         <section class="number-frame">
-            <button class="number-button">
+            <!-- C button-->
+            <button class="number-button" id="C" type="button">
                 <svg width="35" height="47" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="35" height="47" fill="url(#pattern0)" />
@@ -28,7 +29,8 @@
                     </defs>
                 </svg>
             </button>
-            <button class="number-button">
+            <!-- () button-->
+            <button class="parenthesis-button" id="parenthesis" type="button">
                 <svg width="59" height="47" viewBox="0 0 59 47" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="58.75" height="47" fill="url(#pattern1)" />
@@ -41,7 +43,8 @@
                     </defs>
                 </svg>
             </button>
-            <button class="number-button">
+            <!-- % button-->
+            <button class="number-button" id="percentage" type="button">
                 <svg width="42" height="37" viewBox="0 0 42 37" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="42" height="37" fill="url(#pattern2)" />
@@ -54,8 +57,8 @@
                     </defs>
                 </svg>
             </button>
-
-            <button class="number-button">
+            <!-- division button-->
+            <button class="number-button" id="division" type="button">
                 <svg width="50" height="42" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="50" height="42" fill="url(#pattern3)" />
@@ -68,13 +71,14 @@
                     </defs>
                 </svg>
             </button>
-
+            <!-- 7 button-->
             <button class="number-button">
                 <svg width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.50852 30L14.5682 6.13636V5.9375H0.519886V0.90909H20.9318V6.00852L8.85795 30H2.50852Z"
                         fill="black" />
                 </svg>
             </button>
+            <!-- 8 button-->
             <button class="number-button">
                 <svg width="24" height="31" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -82,6 +86,7 @@
                         fill="black" />
                 </svg>
             </button>
+            <!-- 9 button-->
             <button class="number-button">
                 <svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -89,6 +94,7 @@
                         fill="black" />
                 </svg>
             </button>
+            <!-- X button-->
             <button class="number-button">
                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -102,7 +108,7 @@
                     </defs>
                 </svg>
             </button>
-
+            <!-- 4 button-->
             <button class="number-button">
                 <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -111,6 +117,7 @@
                 </svg>
 
             </button>
+            <!-- 5 button-->
             <button class="number-button">
                 <svg width="22" height="31" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -119,6 +126,7 @@
                 </svg>
 
             </button>
+            <!-- 6 button-->
             <button class="number-button">
                 <svg width="24" height="31" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -127,6 +135,7 @@
                 </svg>
 
             </button>
+            <!-- - button-->
             <button class="number-button">
                 <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -140,7 +149,7 @@
                     </defs>
                 </svg>
             </button>
-
+            <!-- 1 button-->
             <button class="number-button">
                 <svg width="14" height="30" viewBox="0 0 14 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -148,6 +157,7 @@
                         fill="black" />
                 </svg>
             </button>
+            <!-- 2 button-->
             <button class="number-button">
                 <svg width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -156,6 +166,7 @@
                 </svg>
 
             </button>
+            <!-- 3 button-->
             <button class="number-button">
                 <svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -164,6 +175,7 @@
                 </svg>
 
             </button>
+            <!-- + button-->
             <button class="number-button">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -178,7 +190,7 @@
                 </svg>
 
             </button>
-
+            <!-- +/- button-->
             <button class="number-button">
                 <svg width="80" height="35" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -205,6 +217,7 @@
                 </svg>
 
             </button>
+            <!-- 0 button-->
             <button class="number-button">
                 <svg width="24" height="31" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -213,6 +226,7 @@
                 </svg>
 
             </button>
+            <!-- . button-->
             <button class="number-button">
                 <svg width="75" height="70" viewBox="0 0 75 70" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -227,6 +241,7 @@
                 </svg>
 
             </button>
+            <!-- = button-->
             <button class="number-button">
                 <svg width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -241,12 +256,9 @@
                 </svg>
 
             </button>
-
             </div>
-
-
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
